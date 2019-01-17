@@ -1,2 +1,3 @@
 - [反卷积(Transposed Convolution)详细推导](https://zhuanlan.zhihu.com/p/48501100)
+  - 卷积尺寸计算公式写错了
 - [卷积神经网络的压缩与加速](https://zhuanlan.zhihu.com/p/38473604)
