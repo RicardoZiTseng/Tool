@@ -2,5 +2,6 @@
   - 卷积尺寸计算公式写错了
 - [卷积神经网络的压缩与加速](https://zhuanlan.zhihu.com/p/38473604)
 - [全卷积网络FCN详解](https://zhuanlan.zhihu.com/p/30195134)
+- [卷积神经网络的感受野](https://zhuanlan.zhihu.com/p/44106492)
 - [CNN感受野的计算](https://zhuanlan.zhihu.com/p/35708466?utm_source=wechat_session&utm_medium=social&from=singlemessage)
   - 感受野是一个很重要的概念
