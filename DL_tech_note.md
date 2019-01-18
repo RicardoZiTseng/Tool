@@ -2,3 +2,4 @@
   - 卷积尺寸计算公式写错了
 - [卷积神经网络的压缩与加速](https://zhuanlan.zhihu.com/p/38473604)
 - [全卷积网络FCN详解](https://zhuanlan.zhihu.com/p/30195134)
+- [CNN感受野的计算](https://zhuanlan.zhihu.com/p/35708466?utm_source=wechat_session&utm_medium=social&from=singlemessage)
