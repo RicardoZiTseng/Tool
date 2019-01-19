@@ -1,0 +1,2 @@
+- max-fragment pooling
+  - [A fast learning algorithm for image segmentation with max-pooling convolutional networks](https://people.lu.usi.ch/mascij/data/papers/2013_icip_fastlearning.pdf)
