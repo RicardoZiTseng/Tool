@@ -27,3 +27,14 @@
   - [TensorFlow笔记——tf.split()拆分tensor和tf.squeeze()](https://blog.csdn.net/liuweiyuxiang/article/details/81192547)
 
 - [tf.name_scope()与tf.variable_sope()的区别](https://www.zhihu.com/question/54513728/answer/181819324)
+
+- tf.add_to_collection()
+  - tf.add_to_collection(name,value) 
+    > 功能：将变量添加到名为name的集合中去。 
+    > 参数：（1）name：集合名（2）value：被添加的变量
+  - tf.get_collection(key,scope=None)
+    > 功能：获取集合中的变量。
+    > 参数：（1）key：集合名
+  - tf.add_n(inputs，name=None) 
+    > 功能：以元素方式添加所有输入张量。
+    > 参数：（1）inputs：张量对象列表，每个对象具有相同的形状和类型。（2）name：操作的名称（可选）。
