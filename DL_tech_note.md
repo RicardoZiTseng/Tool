@@ -6,3 +6,7 @@
 - [如何计算感受野(Receptive Field)——原理 - pdbsettrace的文章 - 知乎](https://zhuanlan.zhihu.com/p/31004121)
 - [CNN感受野的计算](https://zhuanlan.zhihu.com/p/35708466?utm_source=wechat_session&utm_medium=social&from=singlemessage)
   - 感受野是一个很重要的概念
+- [Tensorboard的使用](https://blog.csdn.net/sinat_33761963/article/details/62433234)
+  - tf.summary.image()
+  - tf.summary.scalar()
+  - tf.summary.FileWriter()
