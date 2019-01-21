@@ -28,7 +28,7 @@
 
 - [tf.name_scope()与tf.variable_sope()的区别](https://www.zhihu.com/question/54513728/answer/181819324)
 
-- tf.add_to_collection()
+- [tf.add_to_collection()](https://blog.csdn.net/william_hehe/article/details/78732497)
   - tf.add_to_collection(name,value) 
     > 功能：将变量添加到名为name的集合中去。 
     > 参数：（1）name：集合名（2）value：被添加的变量
