@@ -24,4 +24,4 @@
   ```
   
   **reference**
-  [TensorFlow笔记——tf.split()拆分tensor和tf.squeeze()](https://blog.csdn.net/liuweiyuxiang/article/details/81192547)
+  - [TensorFlow笔记——tf.split()拆分tensor和tf.squeeze()](https://blog.csdn.net/liuweiyuxiang/article/details/81192547)
