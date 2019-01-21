@@ -1,4 +1,4 @@
-1. tf.split
+- tf.split
 
   ```
   split(
