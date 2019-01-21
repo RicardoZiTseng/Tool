@@ -25,3 +25,5 @@
   
   **reference**
   - [TensorFlow笔记——tf.split()拆分tensor和tf.squeeze()](https://blog.csdn.net/liuweiyuxiang/article/details/81192547)
+
+- [tf.name_scope()与tf.variable_sope()的区别](https://www.zhihu.com/question/54513728/answer/181819324)
