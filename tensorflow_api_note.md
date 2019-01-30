@@ -38,3 +38,10 @@
   - tf.add_n(inputs，name=None) 
     > 功能：以元素方式添加所有输入张量。
     > 参数：（1）inputs：张量对象列表，每个对象具有相同的形状和类型。（2）name：操作的名称（可选）。
+    
+ - [tf辅助工具-tensorflow slim](https://www.cnblogs.com/Libo-Master/p/8466104.html)
+    - slim的导入方法
+      ```
+      import tensorflow as tf
+      import tensorflow.contrib.slim as slim
+      ```
