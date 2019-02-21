@@ -187,3 +187,39 @@
                   net = slim.fully_connected(net, 1000, activation_fn=None, scope='fc8')
             return net
           ```
+- tf.Print() 在tensorflow中用于debug 并观察数据流动
+  ```python
+  tf.Print(
+    input_,
+    data,
+    message=None,
+    first_n=None,
+    summarize=None,
+    name=None
+  )
+  ```
+    使用 TensorFlow 时，一定要记得所有的东西最终都体现为图的计算。也就是说如果你使用 Python 的 print 命令来输出 TensorFlow 的某个操作，得到的结果仅仅是这个操作的相关描述，因为当前还没有值被传入这个操作。print 命令还常常会显示该节点所期望且已知的维度。
+    ```python
+    import tensorflow as tf
+
+    a = tf.constant([[4,4],[3,3]])
+    print(a)
+    ```
+    ```
+    >>> Tensor("Const:0", shape=(2, 2), dtype=int32)
+    ```
+    由于上述代码只是描述了一个计算图，直接用print打印输出只会得到数据流图的相关描述，所以想要知道执行计算图后某个具体节点的值，则需要 tf.Print 函数。
+
+    - 调整输出节点的结构位置 \
+      在tensorflow的逻辑中，只有需要被执行的图节点才会计算其输出值，所以如果输出语句悬挂于节点之外，则根本不会输出，如下图所示：
+      ![](https://pic1.zhimg.com/80/v2-4f3fbe651973b2cb1a8d6465ec6323ac_hd.jpg)
+      解决这个问题的办法就是将输出语句嵌入到原来的图当中，就像以下的图一样：
+      ![](https://pic1.zhimg.com/80/v2-40073e16a9779df68029217848b3b640_hd.jpg)
+      ```python
+      node1 = tf.add(input1, input2)
+      node1 = tf.Print(node1, [node1], message='something you want to log')
+      output = tf.multiply(node1, input3)
+      ```
+    
+    - 一些需要注意的事 \
+      注意，在使用 Jupyter notebook 时，输出内容在其 console 的 stderr 中，不是在 notebook 每个代码格子的执行输出中。一定要注意这一点，否则会找不到输出的内容。
