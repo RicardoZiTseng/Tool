@@ -223,3 +223,20 @@
     
     - 一些需要注意的事 \
       注意，在使用 Jupyter notebook 时，输出内容在其 console 的 stderr 中，不是在 notebook 每个代码格子的执行输出中。一定要注意这一点，否则会找不到输出的内容。
+
+- tensorflow中的转置卷积操作
+  ```python
+    tf.nn.conv2d_transpose(
+        value,
+        filter,
+        output_shape,
+        strides,
+        padding='SAME',
+        data_format='NHWC',
+        name=None
+    )
+  ```
+  转置卷积有两个需要注意的点：
+  - filter的维度大小为：[filter_size, filter_size, out_channel, in_channel]
+  普通的卷积核的维度为：[filter_size, filter_size, in_channel, out_channel]
+  - 在tf.nn.conv2d_transpose函数中，参数 output_shape 并不能控制实际输出大小，而是用作检测用的，如果输出节点维度大小与output_shape不符，则会报错
