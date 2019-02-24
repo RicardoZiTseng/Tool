@@ -10,3 +10,4 @@
   - tf.summary.image()
   - tf.summary.scalar()
   - tf.summary.FileWriter()
+- [如何理解先验概率和后验概率](https://zhuanlan.zhihu.com/p/26464206)
