@@ -17,3 +17,4 @@
 
 - 掌握Android的开发方法
   -[Android技术基础](http://jinxuliang.com/course2/CoursePortal/Details/5642fa1ac89f08ac304482d0)
+- [如何系统地学习 C++ 语言？ - 实验楼在线教育的回答 - 知乎](https://www.zhihu.com/question/23447320/answer/546453265)
