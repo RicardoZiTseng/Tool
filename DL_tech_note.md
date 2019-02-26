@@ -12,3 +12,4 @@
   - tf.summary.FileWriter()
 - [如何理解先验概率和后验概率](https://zhuanlan.zhihu.com/p/26464206)
 - [语义分割综述](https://zhuanlan.zhihu.com/p/37618829)
+- [语义分割中的深度学习方法全解：从FCN、SegNet到各代DeepLab](https://zhuanlan.zhihu.com/p/27794982)
