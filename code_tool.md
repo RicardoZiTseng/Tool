@@ -185,3 +185,42 @@ def _upscore_layer(self, bottom, shape, name, wd=0.0005, ksize=4, stride=2):
 
         return deconv
 ```
+
+7. 用于评估图像质量的PSNR(峰值信噪比)和SSIM(结构相似性)
+```python
+    import numpy as np
+    from skimage.measure import compare_ssim
+    from skimage.measure import compare_psnr
+
+    def PSNR(logits, labels):
+        """Calculate the peak sinal-to-noise ratio(PSNR)
+
+        Args:
+          logits: tensor, float - [batch_size, width, height, 1].
+
+          labels: Labels tensor, int32 - [batch_size, width, height, 1].
+              The ground truth of your data.
+        Returns:
+          psnr: PSNR tensor of type float
+        """
+        psnr = []
+        for i in range(logits.shape[0]):
+            psnr.append(compare_psnr(logits[i], labels[i]))
+        return np.mean(psnr)
+
+    def SSIM(logits, labels):
+        """Calculate the sturctural similarity index(SSIM)
+
+        Args:
+          logits: tensor, float - [batch_size, width, height, 1].
+
+          labels: Labels tensor, int32 - [batch_size, width, height, 1].
+              The ground truth of your data.
+        Returns:
+          psnr: SSIM tensor of type float
+        """
+        ssim = []
+        for i in range(logits.shape[0]):
+            ssim.append(compare_ssim(logits[i], labels[i]))
+        return np.mean(ssim)
+```
