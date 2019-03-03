@@ -240,3 +240,48 @@
   - filter的维度大小为：[filter_size, filter_size, out_channel, in_channel]
   普通的卷积核的维度为：[filter_size, filter_size, in_channel, out_channel]
   - 在tf.nn.conv2d_transpose函数中，参数 output_shape 并不能控制实际输出大小，而是用作检测用的，如果输出节点维度大小与output_shape不符，则会报错
+
+
+- Tensorflow 中的正则化
+  1. 创建一个正则化方法
+  2. 将这个正则化方法应用到变量上 \
+
+  对于tf.get_variable()变量初始化方法：
+  ```python
+    tf.get_variable(
+      name,
+      shape=None,
+      dtype=None,
+      initializer=None,
+      regularizer=None,
+      ...
+    )
+  ```
+  -> 首先创建一个正则化方法
+  ```python
+    regularizer = tf.contrib.layers.l2_regularizer(scale=0.1) #scale代表正则化系数的值
+  ```
+  -> 然后将正则化方法传给一个variable
+  ```python
+    a = tf.get_variable(name='I_am_a', regularizer=regularizer, initializer=...)
+  ```
+  这样就完成了正则化步骤 \
+
+  当然也可以这样写 \
+  -> 创建一个variable
+  ```python
+    var = tf.get_variable(name='var', initializer=...)
+  ```
+  -> 然后创建正则项
+  ```python
+    weight_loss = tf.multiply(tf.nn.l2_loss(var), weight_decay, name='weight_loss')
+  ```
+  -> 然后将正则项加入到tf.GraphKeys.REGULARIZATION_LOSSES集合中
+  ```python
+    tf.add_to_collection(tf.GraphKeys.REGULARIZATION_LOSSES, weight_loss)
+  ```
+  -> 最后将正则项加入到总的loss中
+  ```python
+    loss = ... + tf.add_n(tf.get_collection(tf.GraphKeys.REGULARIZATION_LOSSES))
+  ```
+  > 其中, tf.add_n()负责将得到的集合中的所有元素加起来, tf.get_collection()则负责获取指定集合中的所有元素
