@@ -286,4 +286,4 @@
   ```
   > 其中, tf.add_n()负责将得到的集合中的所有元素加起来, tf.get_collection()则负责获取指定集合中的所有元素
   
-  - Tensorboard的使用
+- Tensorboard的使用
