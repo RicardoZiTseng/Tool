@@ -14,3 +14,4 @@
 - [语义分割综述](https://zhuanlan.zhihu.com/p/37618829)
 - [语义分割中的深度学习方法全解：从FCN、SegNet到各代DeepLab](https://zhuanlan.zhihu.com/p/27794982)
 - [必看！！！图像语义分割综述 - stone的文章 - 知乎](https://zhuanlan.zhihu.com/p/37801090)
+- [全参考图像质量评价方法整理与实用性探讨](https://zhuanlan.zhihu.com/p/24804170)
