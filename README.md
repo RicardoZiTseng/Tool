@@ -12,9 +12,6 @@
   - 刷算法题
   - 学Caffe框架
 
-- 熟练掌握Java
-  - [Java程序设计](http://jinxuliang.com/course2/CoursePortal/Details/54004d84137e45731c99035b)
-
 - [如何系统地学习 C++ 语言？ - 实验楼在线教育的回答 - 知乎](https://www.zhihu.com/question/23447320/answer/546453265)
 
 - [【C++深度剖析学习记录】目录](https://blog.csdn.net/qq_37375427/article/details/85228028)
