@@ -15,6 +15,8 @@
 - 熟练掌握Java
   - [Java程序设计](http://jinxuliang.com/course2/CoursePortal/Details/54004d84137e45731c99035b)
 
-- 掌握Android的开发方法
-  -[Android技术基础](http://jinxuliang.com/course2/CoursePortal/Details/5642fa1ac89f08ac304482d0)
 - [如何系统地学习 C++ 语言？ - 实验楼在线教育的回答 - 知乎](https://www.zhihu.com/question/23447320/answer/546453265)
+
+- [【C++深度剖析学习记录】目录](https://blog.csdn.net/qq_37375427/article/details/85228028)
+
+- [C++基础教程](http://c.biancheng.net/cplus/)
