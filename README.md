@@ -17,3 +17,5 @@
 - [【C++深度剖析学习记录】目录](https://blog.csdn.net/qq_37375427/article/details/85228028)
 
 - [C++基础教程](http://c.biancheng.net/cplus/)
+
+- [CMake 入门实战](https://www.hahack.com/codes/cmake/)
